@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "Blockchain.Domain.Shared": {
+      "path": "src/Blockchain.Domain.Shared/Blockchain.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "Blockchain.Domain": {
+      "path": "src/Blockchain.Domain/Blockchain.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "Blockchain.Application.Contracts": {
+      "path": "src/Blockchain.Application.Contracts/Blockchain.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "Blockchain.Application": {
+      "path": "src/Blockchain.Application/Blockchain.Application.abppkg.json",
+      "folder": "src"
+    },
+    "Blockchain.EntityFrameworkCore": {
+      "path": "src/Blockchain.EntityFrameworkCore/Blockchain.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "Blockchain.MongoDB": {
+      "path": "src/Blockchain.MongoDB/Blockchain.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "Blockchain.HttpApi": {
+      "path": "src/Blockchain.HttpApi/Blockchain.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "Blockchain.HttpApi.Client": {
+      "path": "src/Blockchain.HttpApi.Client/Blockchain.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "Blockchain.TestBase": {
+      "path": "test/Blockchain.TestBase/Blockchain.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "Blockchain.EntityFrameworkCore.Tests": {
+      "path": "test/Blockchain.EntityFrameworkCore.Tests/Blockchain.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Blockchain.MongoDB.Tests": {
+      "path": "test/Blockchain.MongoDB.Tests/Blockchain.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Blockchain.Domain.Tests": {
+      "path": "test/Blockchain.Domain.Tests/Blockchain.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Blockchain.Application.Tests": {
+      "path": "test/Blockchain.Application.Tests/Blockchain.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Blockchain.HttpApi.Host": {
+      "path": "host/Blockchain.HttpApi.Host/Blockchain.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "Blockchain.Web": {
+      "path": "src/Blockchain.Web/Blockchain.Web.abppkg.json",
+      "folder": "src"
+    },
+    "Blockchain.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Blockchain.HttpApi.Client.ConsoleTestApp/Blockchain.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "Blockchain.Web.Host": {
+      "path": "host/Blockchain.Web.Host/Blockchain.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "Blockchain.AuthServer": {
+      "path": "host/Blockchain.AuthServer/Blockchain.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "Blockchain.Host.Shared": {
+      "path": "host/Blockchain.Host.Shared/Blockchain.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "Blockchain.Web.Unified": {
+      "path": "host/Blockchain.Web.Unified/Blockchain.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "Blockchain.Blazor": {
+      "path": "src/Blockchain.Blazor/Blockchain.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "Blockchain.Blazor.Host": {
+      "path": "host/Blockchain.Blazor.Host/Blockchain.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "Blockchain.Blazor.Server": {
+      "path": "src/Blockchain.Blazor.Server/Blockchain.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "Blockchain.Blazor.WebAssembly": {
+      "path": "src/Blockchain.Blazor.WebAssembly/Blockchain.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "Blockchain.Blazor.Server.Host": {
+      "path": "host/Blockchain.Blazor.Server.Host/Blockchain.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}
