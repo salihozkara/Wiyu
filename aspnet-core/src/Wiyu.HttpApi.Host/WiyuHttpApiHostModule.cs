@@ -28,6 +28,7 @@ using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
 using Volo.Abp.Swashbuckle;
 using Volo.Abp.VirtualFileSystem;
+using Blockchain;
 
 namespace Wiyu;
 
@@ -40,7 +41,8 @@ namespace Wiyu;
     typeof(WiyuApplicationModule),
     typeof(WiyuEntityFrameworkCoreModule),
     typeof(AbpAspNetCoreSerilogModule),
-    typeof(AbpSwashbuckleModule)
+    typeof(AbpSwashbuckleModule),
+    typeof(BlockchainHttpApiModule)
 )]
 public class WiyuHttpApiHostModule : AbpModule
 {

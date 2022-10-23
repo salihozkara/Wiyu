@@ -58,4 +58,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="../../../modules/Blockchain/src/Blockchain.Web/Blockchain.Web.csproj" />
+  </ItemGroup>
+
 </Project>

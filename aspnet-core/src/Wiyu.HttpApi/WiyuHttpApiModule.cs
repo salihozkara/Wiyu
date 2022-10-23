@@ -7,6 +7,7 @@ using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement.HttpApi;
 using Volo.Abp.SettingManagement;
+using Blockchain;
 
 namespace Wiyu;
 
@@ -16,7 +17,8 @@ namespace Wiyu;
     typeof(AbpIdentityHttpApiModule),
     typeof(AbpPermissionManagementHttpApiModule),
     typeof(AbpFeatureManagementHttpApiModule),
-    typeof(AbpSettingManagementHttpApiModule)
+    typeof(AbpSettingManagementHttpApiModule),
+    typeof(BlockchainHttpApiModule)
     )]
 public class WiyuHttpApiModule : AbpModule
 {

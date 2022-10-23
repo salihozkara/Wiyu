@@ -140,6 +140,45 @@
           }
         }
       }
+    },
+    "Blockchain": {
+      "projectType": "library",
+      "root": "../modules/Blockchain/angular/projects/blockchain",
+      "sourceRoot": "../modules/Blockchain/angular/projects/blockchain/src",
+      "prefix": "abp",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "../modules/Blockchain/angular/projects/blockchain/tsconfig.lib.json",
+            "project": "../modules/Blockchain/angular/projects/blockchain/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "../modules/Blockchain/angular/projects/blockchain/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "coverage": true,
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "../modules/Blockchain/angular/projects/blockchain/tsconfig.lib.json",
+              "../modules/Blockchain/angular/projects/blockchain/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "Wiyu"

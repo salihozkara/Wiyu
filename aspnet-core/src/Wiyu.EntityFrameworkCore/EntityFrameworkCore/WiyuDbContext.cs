@@ -12,6 +12,7 @@ using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
+using Blockchain.EntityFrameworkCore;
 
 namespace Wiyu.EntityFrameworkCore;
 
@@ -72,6 +73,7 @@ public class WiyuDbContext :
         builder.ConfigureOpenIddict();
         builder.ConfigureFeatureManagement();
         builder.ConfigureTenantManagement();
+        builder.ConfigureBlockchain();
 
         /* Configure your own tables/entities inside here */
 
