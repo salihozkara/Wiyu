@@ -1,7 +1,0 @@
-{
-  "modules": {
-    "Blockchain": {
-      "path": "Blockchain.abpmdl.json"
-    }
-  }
-}
