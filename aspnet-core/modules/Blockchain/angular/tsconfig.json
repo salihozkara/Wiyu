@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+      "@blockchain": [
+        "projects/blockchain/src/public-api.ts"
+      ],
+      "@blockchain/config": [
+        "projects/blockchain/config/src/public-api.ts"
+      ],
+      "@proxy": ["projects/blockchain/src/lib/proxy/index.ts"],
+      "@proxy/*": ["projects/blockchain/src/lib/proxy/*"]
+    }
+  }
+}
