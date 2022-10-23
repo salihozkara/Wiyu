@@ -27,4 +27,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="../../../modules/Blockchain/src/Blockchain.EntityFrameworkCore/Blockchain.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
 </Project>

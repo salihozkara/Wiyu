@@ -15,7 +15,13 @@
     "lib": ["es2018", "dom"],
     "paths": {
       "@proxy": ["src/app/proxy/index.ts"],
-      "@proxy/*": ["src/app/proxy/*"]
+      "@proxy/*": ["src/app/proxy/*"],
+      "@test-module": [
+        "../modules/Blockchain/angular/projects/blockchain/src/public-api.ts"
+      ],
+      "@test-module/config": [
+        "../modules/Blockchain/angular/projects/blockchain/config/src/public-api.ts"
+      ]
     }
   },
   "angularCompilerOptions": {

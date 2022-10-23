@@ -24,4 +24,8 @@
     <Folder Include="Models" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="../../../modules/Blockchain/src/Blockchain.HttpApi/Blockchain.HttpApi.csproj" />
+  </ItemGroup>
+
 </Project>

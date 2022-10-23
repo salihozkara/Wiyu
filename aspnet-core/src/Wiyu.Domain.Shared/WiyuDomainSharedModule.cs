@@ -11,6 +11,7 @@ using Volo.Abp.PermissionManagement;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.Validation.Localization;
 using Volo.Abp.VirtualFileSystem;
+using Blockchain;
 
 namespace Wiyu;
 
@@ -21,7 +22,8 @@ namespace Wiyu;
     typeof(AbpIdentityDomainSharedModule),
     typeof(AbpOpenIddictDomainSharedModule),
     typeof(AbpPermissionManagementDomainSharedModule),
-    typeof(AbpSettingManagementDomainSharedModule)
+    typeof(AbpSettingManagementDomainSharedModule),
+    typeof(BlockchainDomainSharedModule)
     )]
 public class WiyuDomainSharedModule : AbpModule
 {

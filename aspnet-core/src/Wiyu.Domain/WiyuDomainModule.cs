@@ -12,6 +12,7 @@ using Volo.Abp.OpenIddict;
 using Volo.Abp.PermissionManagement.Identity;
 using Volo.Abp.PermissionManagement.OpenIddict;
 using Volo.Abp.SettingManagement;
+using Blockchain;
 
 namespace Wiyu;
 
@@ -25,7 +26,8 @@ namespace Wiyu;
     typeof(AbpPermissionManagementDomainOpenIddictModule),
     typeof(AbpPermissionManagementDomainIdentityModule),
     typeof(AbpSettingManagementDomainModule),
-    typeof(AbpEmailingModule)
+    typeof(AbpEmailingModule),
+    typeof(BlockchainDomainModule)
 )]
 public class WiyuDomainModule : AbpModule
 {

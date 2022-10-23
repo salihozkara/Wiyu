@@ -44,6 +44,7 @@ using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.UI;
 using Volo.Abp.UI.Navigation;
 using Volo.Abp.VirtualFileSystem;
+using Blockchain.Web;
 
 namespace Wiyu.Web;
 
@@ -62,7 +63,8 @@ namespace Wiyu.Web;
     typeof(AbpIdentityWebModule),
     typeof(AbpTenantManagementWebModule),
     typeof(AbpAspNetCoreSerilogModule),
-    typeof(AbpSwashbuckleModule)
+    typeof(AbpSwashbuckleModule),
+    typeof(BlockchainWebModule)
     )]
 public class WiyuWebModule : AbpModule
 {
