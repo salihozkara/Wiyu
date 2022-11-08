@@ -5,7 +5,7 @@
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><img src="./Dissertation/media/image1.png"
+<td><img src="./media/image1.png"
 style="width:0.91667in;height:0.91667in" /></td>
 <td><p><strong>MANİSA CELAL BAYAR ÜNİVERSİTESİ</strong></p>
 <p><strong>Hasan Ferdi Turgutlu Teknoloji Fakültesi</strong></p>
