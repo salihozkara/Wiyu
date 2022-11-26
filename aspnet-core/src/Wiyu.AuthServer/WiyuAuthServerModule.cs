@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using Wiyu.EntityFrameworkCore;
 using Wiyu.Localization;
 using Wiyu.MultiTenancy;
@@ -31,6 +32,7 @@ using Volo.Abp.Caching.StackExchangeRedis;
 using Volo.Abp.DistributedLocking;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
+using Volo.Abp.Swashbuckle;
 using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.UI;
 using Volo.Abp.VirtualFileSystem;
@@ -46,7 +48,8 @@ namespace Wiyu;
     typeof(AbpAccountHttpApiModule),
     typeof(AbpAspNetCoreMvcUiBasicThemeModule),
     typeof(WiyuEntityFrameworkCoreModule),
-    typeof(AbpAspNetCoreSerilogModule)
+    typeof(AbpAspNetCoreSerilogModule),
+    typeof(AbpSwashbuckleModule)
     )]
 public class WiyuAuthServerModule : AbpModule
 {
@@ -175,6 +178,20 @@ public class WiyuAuthServerModule : AbpModule
                     .AllowCredentials();
             });
         });
+        
+        ConfigureSwaggerServices(context.Services);
+    }
+    
+    private void ConfigureSwaggerServices(IServiceCollection services)
+    {
+        services.AddAbpSwaggerGen(
+            options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "Wiyu API", Version = "v1" });
+                options.DocInclusionPredicate((docName, description) => true);
+                options.CustomSchemaIds(type => type.FullName);
+            }
+        );
     }
 
     public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -210,6 +227,11 @@ public class WiyuAuthServerModule : AbpModule
         app.UseAuthorization();
         app.UseAuditing();
         app.UseAbpSerilogEnrichers();
+        app.UseSwagger();
+        app.UseAbpSwaggerUI(options =>
+        {
+            options.SwaggerEndpoint("/swagger/v1/swagger.json", "Wiyu API");
+        });
         app.UseConfiguredEndpoints();
     }
 }
